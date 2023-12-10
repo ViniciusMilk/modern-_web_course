@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <p>Texto Inicial</p>
+    </div>
+    <script>
+        // ...
+        
+        // A função innerHTML substitui todo o conteúdo do elemento pelo texto atribuído.
+        
+        // Repare que ao pegar o elemento através da sua classe, o innerHTML substitui o elemento HTML por inteiro.
+        // const div = document.querySelector('.conteudo')
+        // div.innerHTML = 'Texto Alterado!'
+        
+        // Mas ao pegar o elemento através da sua tag, o innerHTML não irá substituir o elemento HTML, somente irá substituir o conteúdo do elemento.
+        const div = document.querySelector('div')
+        div.innerHTML = '<p>Texto Alterado!</p>'
+
+        div.insertAdjacentHTML('beforebegin','<p>Antes do Início</p>')
+        div.insertAdjacentHTML('afterbegin','<p>Depois do Início</p>')
+        div.insertAdjacentHTML('beforeend','<p>Antes do Fim</p>')
+        div.insertAdjacentHTML('afterend','<p>Depois do Fim</p>')
+        
+        
+    </script>
+</body>
+
+</html>
