@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        // ...
+        const body = document.querySelector('.conteudo')
+
+        const div1 = document.createElement('div')
+        div1.innerHTML = 'Primeiro'
+        div1.classList.add('destaque')
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atribudo', 'valor')
+        div2.innerHTML = 'Segundo'
+        
+        const div3 = document.createElement('div')
+        const p1 = document.createElement('p')
+        p1.innerHTML = 'Terceiro'
+        div3.appendChild(p1)
+        div3.classList.add('destaque')
+
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        const antes = document.createElement('p')
+        antes.innerHTML = 'Antes'
+        div3.insertBefore(antes, div3.childNodes[0])
+        
+        const div4 = div3.cloneNode(true)
+        body.insertBefore(div4, body.childNodes[0])
+        // body.removeChild(div3)
+        
+        
+        body.addEventListener('click',() => {
+            div1.classList.toggle('destaque')
+            div3.classList.toggle('destaque')
+            div2.classList.toggle('destaque')
+            div3.childNodes[0].classList.toggle('hidden')
+            body.childNodes[0].classList.toggle('hidden')
+
+        })
+
+    </script>
+</body>
+
+</html>
