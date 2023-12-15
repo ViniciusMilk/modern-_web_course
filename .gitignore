@@ -1,4 +1,7 @@
 node/project/apiExpress/node_modules/
 node/project/funcionarios/node_modules
 html/form/node_modules
+gulp/node_modules
+gulp/spa/node_modules
+ajax/node_modules
 .vscode
