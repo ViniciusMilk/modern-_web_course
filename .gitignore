@@ -4,4 +4,7 @@ html/form/node_modules
 gulp/node_modules
 gulp/spa/node_modules
 ajax/node_modules
-.vscode
+webpack/node_modules
+webpack/public/*.js
+webpack/public/*.css
+webpack/public/*.jpg

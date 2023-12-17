@@ -1,0 +1,9 @@
+body{
+    background-color: #444;
+    color: #F2F;
+    text-align: left;
+    background-image: url(../imgs/Kali_Linux.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
